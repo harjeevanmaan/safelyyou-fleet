@@ -1,0 +1,20 @@
+# Build artifacts and the simulator binary (re-download per README)
+/bin/
+/dist/
+*.test
+*.out
+
+# Simulator output is intentionally checked in (see README); ignore other transient logs
+*.log
+
+# IDE
+.idea/
+.vscode/
+.DS_Store
+
+# Local env
+.env
+.env.local
+
+# Go
+/vendor/
