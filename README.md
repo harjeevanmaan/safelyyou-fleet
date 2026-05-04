@@ -176,9 +176,9 @@ sum/count. For an 8-hour run, M ≈ 480.
 
 **Is it optimal?** One deliberate suboptimization. `GET /stats` could be
 O(1) by tracking running first/last fields updated on every heartbeat
-write. I removed that bookkeeping because writes are frequent and
-snapshots are rare; paying linearly on the rare path keeps the write
-code simpler.
+write. I removed that bookkeeping for code simplicity. For this
+workload (writes ≫ reads) the read-side linear cost is a fine trade;
+for a high-read-rate production setting it would be worth restoring.
 
 Memory could be O(1) per device by dropping the heartbeat set entirely,
 but the spec requires "duplicate heartbeats in one minute count as one"
