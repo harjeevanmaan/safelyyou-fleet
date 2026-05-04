@@ -12,7 +12,7 @@ import (
 	"log/slog"
 	"net/http"
 
-	"github.com/harjeevan/safelyyou-fleet/internal/telemetry"
+	"github.com/harjeevanmaan/safelyyou-fleet/internal/telemetry"
 )
 
 // Registry abstracts the device fleet so handlers stay testable without a

@@ -17,9 +17,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/harjeevan/safelyyou-fleet/internal/api"
-	"github.com/harjeevan/safelyyou-fleet/internal/devices"
-	"github.com/harjeevan/safelyyou-fleet/internal/telemetry"
+	"github.com/harjeevanmaan/safelyyou-fleet/internal/api"
+	"github.com/harjeevanmaan/safelyyou-fleet/internal/devices"
+	"github.com/harjeevanmaan/safelyyou-fleet/internal/telemetry"
 )
 
 const shutdownTimeout = 10 * time.Second

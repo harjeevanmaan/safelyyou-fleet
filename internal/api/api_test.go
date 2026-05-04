@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/harjeevan/safelyyou-fleet/internal/telemetry"
+	"github.com/harjeevanmaan/safelyyou-fleet/internal/telemetry"
 )
 
 type fakeRegistry struct {
